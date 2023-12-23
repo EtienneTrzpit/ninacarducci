@@ -95,15 +95,28 @@ body {
 .nav-pills .nav-link {
   color: #000;
 }
-.item-column {
+.item-column.mb-4 {
   position: relative;
   margin-bottom: 0 !important;
   padding: 0;
-}
+  height: 28rem;
+  width: 33%;
+} /*
 .item-column::after {
   content: "";
   display: block;
   padding-bottom: 100%;
+}*/
+
+.py-3 {
+  margin-left: auto;
+  margin-right: auto;
+}
+.gallery-items-row.row {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
 }
 .gallery-item {
   position: absolute;
@@ -219,6 +232,12 @@ input[type="submit"] {
   background-color: #beb45a;
   padding: 0.5em 1em;
 }
+
+@media all and (max-width: 1365px) {
+  .item-column.mb-4 {
+    height: 19.5rem;
+  }
+}
 @media all and (max-width: 1180px) {
   .picture {
     flex: 2;
@@ -290,7 +309,40 @@ input[type="submit"] {
     right: 0;
     z-index: -1;
   }
+  .gallery {
+    width: 100vw;
+    margin-left: -10vw;
+  }
+  .gallery-item {
+    width: 100%;
+  }
+  .item-column.mb-4 {
+    height: 29vw;
+  }
 }
+
+@media all and (max-width: 767px) {
+  .gallery {
+    margin-left: 15vw;
+    justify-content: center;
+  }
+}
+
+@media all and (max-width: 725px) {
+  .py-3 {
+    margin-left: -15vw;
+    margin-right: 0;
+  }
+  .gallery-items-row.row {
+    width: 930%;
+  }
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}
+
 @media all and (max-width: 650px) {
   .top-header {
     flex-direction: column;
