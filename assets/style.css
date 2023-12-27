@@ -59,7 +59,8 @@ body {
   z-index: 0;
 }
 .picture img {
-  width: 100%;
+  height: 100%;
+  width: 101%;
 }
 #about-me {
   flex: 2;
@@ -219,6 +220,16 @@ form textarea {
 input[type="submit"] {
   background-color: #beb45a;
   padding: 0.5em 1em;
+}
+.d-block {
+  height: 888px;
+}
+blockquote {
+  font-family: Spectral;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 2.5rem;
+  line-height: 1.2;
 }
 @media all and (max-width: 1180px) {
   .picture {
