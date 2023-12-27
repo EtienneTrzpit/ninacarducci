@@ -247,6 +247,10 @@ blockquote {
   #about-me p {
     width: 100%;
   }
+  .carousel-inner img {
+    object-fit: cover;
+    height: 35vh;
+  }
 }
 @media all and (max-width: 1000px) {
   #about {
@@ -338,5 +342,8 @@ blockquote {
   }
   .picture {
     width: 80%;
+  }
+  .carousel-inner img {
+    height: 22vh;
   }
 }
